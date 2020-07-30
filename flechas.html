@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>Dibujando en canvas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- start Canvas features-->
+
+    <h1>Dibujando en Canvas</h1>
+    <canvas width="300" height="300" id="area_de_dibujo"></canvas>
+    <div class="clearfix"></div>
+    <div class="picker">
+      <input type="color" oninput="defcolor(this.value);" />
+      <input
+        type="range"
+        oninput="defgrosor(this.value);"
+        min="1"
+        max="5"
+        value="1"
+      />
+    </div>
+
+    <!-- end Canvas features-->
+
+    <!-- start How to use-->
+
+    <h2>*Puedes usar las teclas direccionales para dibujar desde el centro.</h2>
+    <h2>*O puedes usar tu mouse.</h2>
+
+    <!-- end How to use-->
+
+    <!-- start notes-->
+
+    <div id="notas">
+      <h3>
+        -->Toma screenshot con las teclas <code>" Win + ImpPnt"</code> en
+        Windows.
+      </h3>
+      <h3>
+        -->O toma screenshot con las teclas
+        <code>"shift + command + 3"</code> en Mac.
+      </h3>
+    </div>
+
+    <!-- end notes-->
+
+    <script type="text/javascript" src="flechas.js"></script>
+    <script type="text/javascript" src="mouse.js"></script>
+  </body>
+</html>
